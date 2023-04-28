@@ -87,7 +87,7 @@
     "jsonPathKeys": [
       "orders_table.selectedRow.Order_Id"
     ],
-    "userSetOnLoad": false,
+    "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []

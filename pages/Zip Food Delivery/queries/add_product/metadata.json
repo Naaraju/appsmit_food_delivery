@@ -42,7 +42,7 @@
           "data": ""
         },
         "rowObjects": {
-          "data": "{{ \nproduct_list.listData.map((product , index) =>{\n\t\t\t\t\t\t\t\t\t\t\t\t\treturn {\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"id\": fetch_products.data.length + index ,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Item\": product.Item,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Item_Image\": product[\"Item_Image\"],\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Order_Id\" : this.params.id,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Qty\" : '5'\n\t\t\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t \n\n}\n)\n\n}}"
+          "data": "{{ \nproduct_list.listData.map((product , index) =>{\n\t\t\t\t\t\t\t\t\t\t\t\t\treturn {\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"id\": fetch_products.data.length + index ,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Item\": product.Item,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Item_Image\": product[\"Item_Image\"],\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Order_Id\" : this.params.id,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Qty\" : product_list. [index].qty_input.text\n\t\t\t\t\t\t\t\t\t\t\t\t\t/* \"Qty\" : '5' */\n\t\t\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t \n\n}\n)\n\n}}"
         },
         "sheetName": {
           "data": "Products"
@@ -73,7 +73,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      " \nproduct_list.listData.map((product , index) =>{\n\t\t\t\t\t\t\t\t\t\t\t\t\treturn {\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"id\": fetch_products.data.length + index ,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Item\": product.Item,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Item_Image\": product[\"Item_Image\"],\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Order_Id\" : this.params.id,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Qty\" : '5'\n\t\t\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t \n\n}\n)\n\n"
+      " \nproduct_list.listData.map((product , index) =>{\n\t\t\t\t\t\t\t\t\t\t\t\t\treturn {\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"id\": fetch_products.data.length + index ,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Item\": product.Item,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Item_Image\": product[\"Item_Image\"],\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Order_Id\" : this.params.id,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Qty\" : product_list. [index].qty_input.text\n\t\t\t\t\t\t\t\t\t\t\t\t\t/* \"Qty\" : '5' */\n\t\t\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t \n\n}\n)\n\n"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
